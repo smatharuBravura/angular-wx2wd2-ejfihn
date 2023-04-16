@@ -3,9 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-example',
   templateUrl: 'example.component.html',
-  styleUrls: ['example.component.css']
+  styleUrls: ['example.component.css', '../assets/scss/style.scss'],
 })
-
 export class ExampleComponent {
   result: string;
   public actionSheetButtons = [
@@ -13,22 +12,22 @@ export class ExampleComponent {
       text: 'Delete',
       role: 'destructive',
       data: {
-        action: 'delete'
-      }
+        action: 'delete',
+      },
     },
     {
       text: 'Share',
       data: {
-        action: 'share'
-      }
+        action: 'share',
+      },
     },
     {
       text: 'Cancel',
       role: 'cancel',
       data: {
-        action: 'cancel'
-      }
-    }
+        action: 'cancel',
+      },
+    },
   ];
 
   constructor() {}
